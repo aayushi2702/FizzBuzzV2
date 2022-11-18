@@ -32,4 +32,8 @@ public class FizzBuzzGameServiceTests {
 		assertThat(fizzBuzzGameService.getFizzBuzzGameOutput(5), is("Buzz"));
 	}
 
+	@Test
+	public void getFizzBuzzGameOutput_ReturnsFizzWithInputMultipleOf_3Test() {
+		assertThat(fizzBuzzGameService.getFizzBuzzGameOutput(6), is("Fizz"));
+	}
 }
