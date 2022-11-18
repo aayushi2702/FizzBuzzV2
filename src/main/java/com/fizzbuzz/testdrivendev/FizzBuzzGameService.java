@@ -2,11 +2,18 @@ package com.fizzbuzz.testdrivendev;
 
 public class FizzBuzzGameService {
 	public static String getFizzBuzzGameOutput(int number) {
-		if (number % 3 == 0)
+		if (isMultipleOf3(number))
 			return "Fizz";
-		else if (number % 5 == 0)
+		else if (isMultipleOf5(number))
 			return "Buzz";
 		return String.valueOf(number);
 	}
 
+	private static boolean isMultipleOf3(int number) {
+		return number % 3 == 0;
+	}
+
+	private static boolean isMultipleOf5(int number) {
+		return number % 5 == 0;
+	}
 }
