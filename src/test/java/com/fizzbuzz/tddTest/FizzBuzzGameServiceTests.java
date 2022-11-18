@@ -22,4 +22,8 @@ public class FizzBuzzGameServiceTests {
 		assertThat(fizzBuzzGameService.getFizzBuzzGameOutput(1), is("1"));
 	}
 
+	@Test
+	public void getFizzBuzzGameOutput_ReturnsFizzWithInput_3Test() {
+		assertThat(fizzBuzzGameService.getFizzBuzzGameOutput(3), is("Fizz"));
+	}
 }
